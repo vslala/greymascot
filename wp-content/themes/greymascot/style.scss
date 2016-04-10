@@ -33,7 +33,10 @@ nav ul li.active{
   font-weight: bolder;
 }
 .container{
-    width: 80% !important;
+  width: 80% !important;
+  @media screen and (max-width: 480px){
+    width: 100% !important;
+  }
 }
 .bg-white{
   background-color: #ffffff;
@@ -49,7 +52,24 @@ nav ul li.active{
 }
 .right-border-separation{
   border-right: 1em solid $bg-color;
+  @media screen and (max-width: 480px){
+    border: 0px;
+  }
 }
+.header-icon{
+  background-color: $nav-bg-color;
+  color: white;
+  &:hover{
+    background-color: $navbar-hover;
+    color: white;
+  }
+}
+.thick-border{
+}
+.no-padding{
+  padding: 0px !important;
+}
+// SINGLE POST
 .single-post{
   padding: 10px;
 }
@@ -63,7 +83,8 @@ nav ul li.active{
   text-decoration: none;
   color: #222223;
   &:hover{
-    color: black;
+    transition: color 0.8s;
+    color: darkslateblue;
   }
 }
 .single-post__blog-info{
@@ -82,7 +103,15 @@ nav ul li.active{
 .single-post__entry{
   display: inline-block;
   padding: 0px 9px 0px 0px;
-  line-height: 19px;
+  vertical-align: middle;
+  font-weight: light;
+  font-size: 1.2rem;
+}
+.single-post__featured-img{
+  &:hover{
+    transition: opacity 0.8s;
+    opacity: 0.7;
+  }
 }
 .single-post__btn{
   margin-top: 1em;
@@ -101,3 +130,38 @@ nav ul li.active{
   font-family: 'Ubuntu', sans;
   font-size: larger;
 }
+
+// WIDGETS
+.widget{
+  list-style: none;
+  width: 100%;
+  border-bottom: 1em solid $bg-color;
+}
+.widget .widgettitle{
+  font-family: Ubuntu, sans-serif;
+  font-size: x-large;
+  font-weight: light;
+  padding: 0px 0px 0px 10px;
+}
+.widget ul{
+  display: block;
+  transition: 0.25s;
+  color: $nav-bg-color;
+}
+.widget ul li{
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid $bg-color;
+}
+.widget ul li a{
+  text-decoration: none;
+  padding: 5px;
+  &:hover{
+    color: white;
+    background-color: $navbar-hover;
+    padding: 5px;
+  }
+}
+// PAGINATION

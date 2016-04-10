@@ -1,7 +1,13 @@
 <?php
 
 $args = [
-
+    'name'          => __( 'Sidebar', 'sidebar' ),
+    'id'            => 'sidebar-1',
+    'description'   => 'This side bar is a widget and must be included in the places intended to be used',
+    'before_widget' => '<div class="bg-white">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<div class="sidebar-title">',
+    'after_title'   => '</div>'
 ];
 register_sidebar();
 

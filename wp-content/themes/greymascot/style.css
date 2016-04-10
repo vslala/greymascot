@@ -31,6 +31,9 @@ nav ul li.active {
 
 .container {
   width: 80% !important; }
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100% !important; } }
 
 .bg-white {
   background-color: #ffffff; }
@@ -46,6 +49,19 @@ nav ul li.active {
 
 .right-border-separation {
   border-right: 1em solid #E9EAED; }
+  @media screen and (max-width: 480px) {
+    .right-border-separation {
+      border: 0px; } }
+
+.header-icon {
+  background-color: #46629E;
+  color: white; }
+  .header-icon:hover {
+    background-color: #415A8F;
+    color: white; }
+
+.no-padding {
+  padding: 0px !important; }
 
 .single-post {
   padding: 10px; }
@@ -59,7 +75,8 @@ nav ul li.active {
   text-decoration: none;
   color: #222223; }
   .single-post--title:hover {
-    color: black; }
+    transition: color 0.8s;
+    color: darkslateblue; }
 
 .single-post__blog-info {
   padding: 5px; }
@@ -77,7 +94,13 @@ nav ul li.active {
 .single-post__entry {
   display: inline-block;
   padding: 0px 9px 0px 0px;
-  line-height: 19px; }
+  vertical-align: middle;
+  font-weight: light;
+  font-size: 1.2rem; }
+
+.single-post__featured-img:hover {
+  transition: opacity 0.8s;
+  opacity: 0.7; }
 
 .single-post__btn {
   margin-top: 1em; }
@@ -93,5 +116,36 @@ nav ul li.active {
 .author-box__description {
   font-family: 'Ubuntu', sans;
   font-size: larger; }
+
+.widget {
+  list-style: none;
+  width: 100%;
+  border-bottom: 1em solid #E9EAED; }
+
+.widget .widgettitle {
+  font-family: Ubuntu, sans-serif;
+  font-size: x-large;
+  font-weight: light;
+  padding: 0px 0px 0px 10px; }
+
+.widget ul {
+  display: block;
+  transition: 0.25s;
+  color: #46629E; }
+
+.widget ul li {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #E9EAED; }
+
+.widget ul li a {
+  text-decoration: none;
+  padding: 5px; }
+  .widget ul li a:hover {
+    color: white;
+    background-color: #415A8F;
+    padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */

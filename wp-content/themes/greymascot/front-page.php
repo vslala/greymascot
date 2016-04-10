@@ -48,9 +48,13 @@
                             <hr class="grey"/>
                 <?php endwhile; echo '</div>'; endif; ?>
 
+                <!-- Pagination Template -->
+                <?php include get_template_directory().'/templates/pagination.php'; ?>
             </section>
         </div>
-        <div class="col m4 l4"></div>
+        <div class="col m4 l4 hide-on-med-and-down bg-white no-padding">
+            <?php dynamic_sidebar('sidebar-1') ?>
+        </div>
     </div>
 </div>
 
