@@ -1,0 +1,97 @@
+/*
+Theme Name: greymascot;
+Author: Varun Shrivastava;
+Author Uri: http://www.varunshrivastava.in;
+*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css);
+body {
+  background-color: #E9EAED;
+  font-family: Roboto, sans-serif; }
+
+body a {
+  color: #46629E;
+  cursor: pointer;
+  text-decoration: underline; }
+
+nav {
+  background-color: #46629E; }
+
+nav li {
+  border-right: 1px solid white; }
+  nav li:hover {
+    background-color: #415A8F; }
+
+nav a {
+  text-decoration: none; }
+
+nav ul li.active {
+  background-color: #415A8F !important;
+  font-weight: bolder; }
+
+.container {
+  width: 80% !important; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.grey {
+  border: 0em solid #E9EAED; }
+
+.red-text {
+  color: crimson; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.right-border-separation {
+  border-right: 1em solid #E9EAED; }
+
+.single-post {
+  padding: 10px; }
+
+.single-post__heading, .single-post--title {
+  font-size: 32px;
+  font-weight: light;
+  font-family: 'Roboto', tahoma, arial, helvetica, sans-serif; }
+
+.single-post--title {
+  text-decoration: none;
+  color: #222223; }
+  .single-post--title:hover {
+    color: black; }
+
+.single-post__blog-info {
+  padding: 5px; }
+
+.single-post__content {
+  margin-top: 5px;
+  font-size: larger;
+  font-family: 'Ubuntu', sans; }
+
+.single-post__blog-info a {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: none; }
+
+.single-post__entry {
+  display: inline-block;
+  padding: 0px 9px 0px 0px;
+  line-height: 19px; }
+
+.single-post__btn {
+  margin-top: 1em; }
+
+.author-box {
+  padding: 3.1rem; }
+
+.author-box__title {
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: 'Roboto', tahoma, arial, helvetica, sans-serif; }
+
+.author-box__description {
+  font-family: 'Ubuntu', sans;
+  font-size: larger; }
+
+/*# sourceMappingURL=style.css.map */
