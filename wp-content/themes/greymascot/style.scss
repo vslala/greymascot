@@ -38,6 +38,9 @@ nav ul li.active{
     width: 100% !important;
   }
 }
+.hidden{
+  display: none;
+}
 .bg-white{
   background-color: #ffffff;
 }
@@ -136,6 +139,8 @@ nav ul li.active{
   list-style: none;
   width: 100%;
   border-bottom: 1em solid $bg-color;
+  background-color: #fff;
+  padding: 10px 20px;
 }
 .widget .widgettitle{
   font-family: Ubuntu, sans-serif;
@@ -149,6 +154,7 @@ nav ul li.active{
   color: $nav-bg-color;
 }
 .widget ul li{
+  text-align: left;
   background-color: #fff;
   line-height: 1.5rem;
   padding: 10px 20px;
@@ -165,3 +171,11 @@ nav ul li.active{
   }
 }
 // PAGINATION
+
+// GOOGLE SEARCH FORM
+.form-container{
+  border-bottom: 1em solid $bg-color;
+}
+.form-container input {
+  height: 2rem;
+}

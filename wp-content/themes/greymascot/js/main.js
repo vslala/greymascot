@@ -1,4 +1,5 @@
 $(function() {
+
     $(".single-post__featured-img img").each(function() {
         var imgSrc = $(this).attr('src');
         var $itemPointer = $(this);
@@ -11,5 +12,14 @@ $(function() {
 
     $('.single-post__content img').each(function () {
         $(this).addClass('responsive-img');
-    })
+    });
+
+    $("a").each(function () {
+        $(this).attr('itemprop', 'url');
+    });
+
+    setInterval(function() {
+        $('#page_search_loader').fadeOut('slow');
+    }, 3000);
+
 });

@@ -35,6 +35,9 @@ nav ul li.active {
     .container {
       width: 100% !important; } }
 
+.hidden {
+  display: none; }
+
 .bg-white {
   background-color: #ffffff; }
 
@@ -120,7 +123,9 @@ nav ul li.active {
 .widget {
   list-style: none;
   width: 100%;
-  border-bottom: 1em solid #E9EAED; }
+  border-bottom: 1em solid #E9EAED;
+  background-color: #fff;
+  padding: 10px 20px; }
 
 .widget .widgettitle {
   font-family: Ubuntu, sans-serif;
@@ -134,6 +139,7 @@ nav ul li.active {
   color: #46629E; }
 
 .widget ul li {
+  text-align: left;
   background-color: #fff;
   line-height: 1.5rem;
   padding: 10px 20px;
@@ -147,5 +153,11 @@ nav ul li.active {
     color: white;
     background-color: #415A8F;
     padding: 5px; }
+
+.form-container {
+  border-bottom: 1em solid #E9EAED; }
+
+.form-container input {
+  height: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

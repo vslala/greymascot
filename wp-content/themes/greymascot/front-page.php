@@ -24,7 +24,7 @@
                                             <span class="single-post__entry"><?= get_avatar( get_the_author_meta( 'ID' ), 62, '', '', ['class'=> 'responsive-img circle'] ); ?></span>
                                             <span class="single-post__entry"><?php the_author() ?></span>
                                             <span class="single-post__entry"><?php the_category() ?></span>
-                                            <span class="single-post__entry"><?php the_modified_time() ?></span>
+                                            <span class="single-post__entry"><?php the_date(); ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
             </section>
         </div>
         <div class="col m4 l4 hide-on-med-and-down bg-white no-padding">
-            <?php dynamic_sidebar('sidebar-1') ?>
+            <?php dynamic_sidebar('primary-sidebar'); ?>
         </div>
     </div>
 </div>
