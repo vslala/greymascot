@@ -12,7 +12,9 @@ body {
 body a {
   color: #46629E;
   cursor: pointer;
-  text-decoration: underline; }
+  text-decoration: none; }
+  body a:hover {
+    text-decoration: underline; }
 
 nav {
   background-color: #46629E; }
@@ -41,6 +43,9 @@ nav ul li.active {
 .bg-white {
   background-color: #ffffff; }
 
+.bg {
+  background-color: #E9EAED; }
+
 .grey {
   border: 0em solid #E9EAED; }
 
@@ -62,6 +67,12 @@ nav ul li.active {
   .header-icon:hover {
     background-color: #415A8F;
     color: white; }
+
+.section-title {
+  font-family: 'Roboto', tahoma, arial, helvetica, sans-serif;
+  font-size: x-large;
+  transform: uppercase;
+  font-weight: bold; }
 
 .no-padding {
   padding: 0px !important; }
@@ -159,5 +170,11 @@ nav ul li.active {
 
 .form-container input {
   height: 2rem; }
+
+.card-action a {
+  color: #415A8F !important; }
+  .card-action a:hover {
+    text-decoration: underline;
+    font-weight: bolder; }
 
 /*# sourceMappingURL=style.css.map */

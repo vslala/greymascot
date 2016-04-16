@@ -1,5 +1,4 @@
-$(function() {
-
+$(document).ready(function () {
     $(".single-post__featured-img img").each(function() {
         var imgSrc = $(this).attr('src');
         var $itemPointer = $(this);
@@ -22,4 +21,8 @@ $(function() {
         $('#page_search_loader').fadeOut('slow');
     }, 3000);
 
+    $('.button-collapse').sideNav();
+
 });
+
+

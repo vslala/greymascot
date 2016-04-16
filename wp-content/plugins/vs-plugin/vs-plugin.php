@@ -49,3 +49,20 @@ function register_single_page_sidebar () {
     register_sidebar($args);
 }
 add_action('widgets_init', 'register_single_page_sidebar');
+
+# Returns the Related blogPosts
+function getRelatedPostsByCategory ($postCount = 5) {
+    global $post;
+    $catID = $post->post_category[0];
+
+    $args = [
+        'category' => $catID,
+        'posts_per_page' => $postCount,
+        'post_status' => 'publish'
+    ];
+    $results = get_posts($args);
+    foreach ($results as $key=>$p) {
+        unset ($results [$key-1]);
+    }
+    return $results;
+}

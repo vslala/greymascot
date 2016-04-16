@@ -1,6 +1,6 @@
 <?php
 $totalPosts = wp_count_posts()->publish;
-$totalPosts /= 2;
+$totalPosts /= 5;
 $totalPosts = round($totalPosts);
 ?>
 <div class="row">

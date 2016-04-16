@@ -14,7 +14,10 @@ body {
 body a{
     color: $nav-bg-color;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
 }
 nav{
     background-color: $nav-bg-color;
@@ -44,6 +47,9 @@ nav ul li.active{
 .bg-white{
   background-color: #ffffff;
 }
+.bg {
+  background-color: $bg-color;
+}
 .grey{
   border: 0em solid $bg-color;
 }
@@ -66,6 +72,12 @@ nav ul li.active{
     background-color: $navbar-hover;
     color: white;
   }
+}
+.section-title {
+  font-family: 'Roboto', tahoma, arial, helvetica, sans-serif;
+  font-size: x-large;
+  transform: uppercase;
+  font-weight: bold;
 }
 .thick-border{
 }
@@ -178,4 +190,14 @@ nav ul li.active{
 }
 .form-container input {
   height: 2rem;
+}
+
+
+// MATERIALIZE CARD LINK STYLE
+.card-action a {
+  color: $navbar-hover !important;
+  &:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+  }
 }
