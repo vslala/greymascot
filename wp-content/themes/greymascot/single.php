@@ -57,14 +57,20 @@ include get_template_directory().'/templates/navbar.php';
         <div class="col s12 m3 l3 bg-white">
             <div class="card medium">
                 <div class="card-image" style="height: 200px;">
-                    <?= get_the_post_thumbnail($post->ID, 'small') ?>
+                    <?php
+                        if (has_post_thumbnail($post->ID)) {
+                            echo get_the_post_thumbnail($post->ID, 'small');
+                        } else {
+                            echo '<center>No Thumbnail available for this post</center>';
+                        }
+                    ?>
                     <span class="card-title"><?= $post->post_title; ?></span>
                 </div>
                 <div class="card-content">
                     <p class="card-title--summary"><?= substr($post->post_content, 0, 140).'...'; ?></p>
                 </div>
                 <div class="card-action">
-                    <a href="<?= $post->post_permalink; ?>" >Read...</a>
+                    <a href="<?= get_bloginfo('url').'/'.$post->post_name; ?>" >Read...</a>
                 </div>
             </div>
         </div>
